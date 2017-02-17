@@ -1,0 +1,60 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] CLI Version:  3.2.3
+[debug] Platform:     darwin
+[debug] Node Version: v6.6.0
+[debug] Time:         Fri Feb 17 2017 12:16:50 GMT-0500 (EST)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/angularfirebase-884d4  
+ Fri Feb 17 2017 12:16:50 GMT-0500 (EST)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/angularfirebase-884d4/tokens  
+ Fri Feb 17 2017 12:16:51 GMT-0500 (EST)
+[debug] <<< HTTP RESPONSE 200
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] CLI Version:  3.2.3
+[debug] Platform:     darwin
+[debug] Node Version: v6.6.0
+[debug] Time:         Fri Feb 17 2017 12:23:30 GMT-0500 (EST)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/angularfirebase-884d4  
+ Fri Feb 17 2017 12:23:30 GMT-0500 (EST)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/angularfirebase-884d4/tokens  
+ Fri Feb 17 2017 12:23:30 GMT-0500 (EST)
+[debug] <<< HTTP RESPONSE 200
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] CLI Version:  3.2.3
+[debug] Platform:     darwin
+[debug] Node Version: v6.6.0
+[debug] Time:         Fri Feb 17 2017 12:27:20 GMT-0500 (EST)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/angularfirebase-884d4  
+ Fri Feb 17 2017 12:27:20 GMT-0500 (EST)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/angularfirebase-884d4/tokens  
+ Fri Feb 17 2017 12:27:20 GMT-0500 (EST)
+[debug] <<< HTTP RESPONSE 200
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] CLI Version:  3.2.3
+[debug] Platform:     darwin
+[debug] Node Version: v6.6.0
+[debug] Time:         Fri Feb 17 2017 12:32:14 GMT-0500 (EST)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/angularfirebase-884d4  
+ Fri Feb 17 2017 12:32:14 GMT-0500 (EST)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/angularfirebase-884d4/tokens  
+ Fri Feb 17 2017 12:32:15 GMT-0500 (EST)
+[debug] <<< HTTP RESPONSE 200
