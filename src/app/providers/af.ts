@@ -24,7 +24,7 @@ export class AF {
    * Logs out the current user
    */
   logout() {
-    localStorage.setItem('userData', '');
+    
     return this.af.auth.logout();
   }
 }

@@ -17,8 +17,7 @@ export class LoginPageComponent implements OnInit {
   login() {
     this.afService.loginWithGoogle().then((data) => {
       // Send them to the homepage if they are logged in
-      console.log(data.auth);
-      localStorage.setItem('userData', JSON.stringify(data.auth));
+      
       this.router.navigate(['']);
     })
   }

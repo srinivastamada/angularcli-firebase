@@ -10,7 +10,7 @@ export class HomePageComponent implements OnInit {
   constructor() {
 
     this.user();
-    
+
   }
 
   ngOnInit() {
@@ -19,15 +19,15 @@ export class HomePageComponent implements OnInit {
   user() {
 
     if (localStorage.getItem('userData')) {
-      
+
       this.userData = JSON.parse(localStorage.getItem('userData'));
-      console.log("XXXX");
+    
       console.log(this.userData);
     }
-    else{
+    else {
       console.log("No Data");
     }
-  
+
   }
 
 }
