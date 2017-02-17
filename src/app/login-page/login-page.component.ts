@@ -1,0 +1,29 @@
+import { Component, OnInit } from '@angular/core';
+import { AF } from ".././providers/af";
+import { Router } from "@angular/router";
+
+@Component({
+  selector: 'app-login-page',
+  templateUrl: './login-page.component.html',
+  styleUrls: ['./login-page.component.css']
+})
+export class LoginPageComponent implements OnInit {
+
+  constructor(public afService: AF, private router: Router) { }
+
+  ngOnInit() {
+  }
+
+  login() {
+    this.afService.loginWithGoogle().then((data) => {
+      // Send them to the homepage if they are logged in
+      console.log(data.auth);
+      localStorage.setItem('userData', JSON.stringify(data.auth));
+      this.router.navigate(['']);
+    })
+  }
+
+
+
+
+}
