@@ -17,14 +17,15 @@ export class AppComponent {
       (auth) => {
         if(auth == null) {
           console.log("Not Logged in.");
-          this.router.navigate(['login']);
+          this.router.navigate(['']);
           this.isLoggedIn = false;
+
         }
         else {
           console.log("Successfully Logged in.");
           this.isLoggedIn = true;
           localStorage.setItem('userData', JSON.stringify(auth.auth));
-          this.router.navigate(['']);
+          this.router.navigate(['home']);
         }
       }
     );

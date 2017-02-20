@@ -1,86 +1,73 @@
 @import '~@angular/material/core/theming/all-theme';
 @include md-core();
 $primary: md-palette($md-light-blue);
-$accent:  md-palette($md-amber, A200, A100, A400);
+$accent : md-palette($md-amber, A200, A100, A400);
 $theme: md-light-theme($primary, $accent);
 @include angular-material-theme($theme);
-
 .m2app-dark {
   $dark-primary: md-palette($md-pink, 700, 500, 900);
-  $dark-accent:  md-palette($md-blue-grey, A200, A100, A400);
-  $dark-warn:    md-palette($md-deep-orange);
+  $dark-accent: md-palette($md-blue-grey, A200, A100, A400);
+  $dark-warn: md-palette($md-deep-orange);
   $dark-theme: md-dark-theme($dark-primary, $dark-accent, $dark-warn);
   @include angular-material-theme($dark-theme);
 }
-*{margin:0px ; padding:0px}
-footer{    bottom: 0 !important;
-    position: fixed;
-    width: 100%;}
 
-    .app-toolbar-filler {
+* {
+  margin: 0px;
+  padding: 0px
+}
+
+$white: #ffffff;
+.loginmodal-container {
+  .google {
+    background-color: #dd4b39 !important;
+    color: $white !important;
+  }
+  .github {
+    background-color: #333333 !important;
+    color: $white !important;
+  }
+  .facebook {
+    background-color: #006699 !important;
+    color: $white !important;
+  }
+  .fa {
+    font-size: 20px;
+    color: $white;
+    margin-right: 5px;
+  }
+  button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.homemodal-container{
+  img{
+    width: 150px;
+  }
+}
+
+footer {
+  bottom: 0 !important;
+  position: fixed;
+  width: 100%;
+}
+
+.app-toolbar-filler {
   flex: 1 1 auto;
 }
-md-sidenav-layout.m2app-dark {
-  background: black;
+
+.spacer {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
-.profilePic{
-  width:150px;
-}
+
 .app-content {
   padding: 20px;
 }
+
 .app-content md-card {
-  margin: 20px;
-}
-.app-sidenav {
-  padding: 10px;
-  min-width: 100px;
-}
-.app-content md-checkbox {
-  margin: 10px;
-}
-body {
-  margin: 0 !important;
-}
-.app-toolbar-menu {
-  padding: 0 14px 0 14px;
-  color: white;
-}
-.app-icon-button {
-  box-shadow: none;
-  user-select: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-  filter: none;
-  font-weight: normal;
-  height: auto;
-  line-height: inherit;
-  margin: 0;
-  min-width: 0;
-  padding: 0;
-  text-align: left;
-  text-decoration: none;
-}
-.app-action {
-  display: inline-block;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-}
-.app-spinner {
-  height: 30px;
-  width: 30px;
-  display: inline-block;
-}
-.app-input-icon {
-  font-size: 16px;
-}
-.app-list {
-  border: 1px solid rgba(0,0,0,0.12);
-  width: 350px;
-  margin: 20px;
-}
-.app-progress {
   margin: 20px;
 }

@@ -1,7 +1,17 @@
 <div class="modal-dialog">
   <div class="loginmodal-container">
-    <h1>Login to Your Account</h1><br>
-    <button md-raised-button color="primary" (click)="login()">Login With Google</button>
+    <h1>Login to Your Social Account</h1><br>
+    <button md-raised-button class='google' (click)="socialLogin('google')">
+      <i class="fa fa-google" aria-hidden="true"></i> Login With Google</button>
+
+     <button md-raised-button class="github" (click)="socialLogin('github')">
+      <i class="fa fa-github" aria-hidden="true"></i> Login With Github</button>
+
+      <button md-raised-button color="primary" (click)="socialLogin('twitter')">
+      <i class="fa fa-twitter" aria-hidden="true"></i> Login With Twitter</button>
+
+       <button md-raised-button class="facebook" (click)="socialLogin('facebook')">
+      <i class="fa fa-facebook" aria-hidden="true"></i> Login With Facebook</button>
      
   </div>
 </div>

@@ -14,11 +14,11 @@ export class LoginPageComponent implements OnInit {
   ngOnInit() {
   }
 
-  login() {
-    this.afService.loginWithGoogle().then((data) => {
+  socialLogin(loginProvider) {
+    this.afService.socialLogin(loginProvider).then((data) => {
       // Send them to the homepage if they are logged in
-      
-      this.router.navigate(['']);
+
+      this.router.navigate(['home']);
     })
   }
 

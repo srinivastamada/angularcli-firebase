@@ -1,4 +1,25 @@
-<div layout="column" layout-fill>
+<md-toolbar color="primary">
+  <span> 9lessons Firebase Social Login Project</span>
+  <span class="spacer"></span>
+  <div *ngIf="isLoggedIn">
+    <a (click)="logout()">Logout</a>
+  </div>
+</md-toolbar>
+<div class="app-content">
+  <md-card>
+    <div class="app-content">
+      <router-outlet></router-outlet>
+    </div>
+  </md-card>
+</div>
+<footer>
+  <md-toolbar class="md-scroll-shrink">
+    <div layout="row" layout-align="center center" flex>
+      Srinivas Tamada Production
+    </div>
+  </md-toolbar>
+</footer>
+<!--<div layout="column" layout-fill>
   <header>
     <md-toolbar md-scroll-shrink color="primary">
       <div layout="row" layout-align="center center" flex>
@@ -12,52 +33,13 @@
   <main>
     <div class="app-content">
       <md-card>
-        <!--<div *ngIf="isLoggedIn" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a (click)="logout()">Logout</a></li>
-          </ul>
-        </div>-->
+        
         <div class="app-content">
           <router-outlet></router-outlet>
         </div>
-        <!--<button md-button>FLAT</button>
-        <button md-raised-button md-tooltip="This is a tooltip!">RAISED</button>
-        <button md-raised-button color="primary">PRIMARY RAISED</button>
-        <button md-raised-button color="accent">ACCENT RAISED</button>-->
+       
       </md-card>
-      <!--<md-card>
-        <md-checkbox>Unchecked</md-checkbox>
-        <md-checkbox [checked]="true">Checked</md-checkbox>
-        <md-checkbox [indeterminate]="true">Indeterminate</md-checkbox>
-        <md-checkbox [disabled]="true">Disabled</md-checkbox>
-      </md-card>
-      <md-card>
-        <md-radio-button name="symbol">Alpha</md-radio-button>
-        <md-radio-button name="symbol">Beta</md-radio-button>
-        <md-radio-button name="symbol" disabled>Gamma</md-radio-button>
-      </md-card>
-      <md-card class="app-input-section">
-        <md-input placeholder="First name"></md-input>
-        <md-input #nickname placeholder="Nickname" maxlength="50">
-          <md-hint align="end">
-            {{nickname.characterCount}} / 50
-          </md-hint>
-        </md-input>
-        <md-input>
-          <md-placeholder>
-            <i class="material-icons app-input-icon">android</i> Favorite phone
-          </md-placeholder>
-        </md-input>
-        <md-input placeholder="Motorcycle model">
-          <span md-prefix>
-          <i class="material-icons app-input-icon">motorcycle</i>
-          &nbsp;
-        </span>
-        </md-input>
-      </md-card>
-      <md-card>
-        <md-spinner color="accent" class="app-spinner"></md-spinner>
-      </md-card>-->
+      
     </div>
   </main>
   <footer>
@@ -67,4 +49,4 @@
       </div>
     </md-toolbar>
   </footer>
-</div>
+</div>-->
