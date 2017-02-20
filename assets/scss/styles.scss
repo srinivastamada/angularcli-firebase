@@ -1,0 +1,73 @@
+@import '~@angular/material/core/theming/all-theme';
+@include md-core();
+$primary: md-palette($md-light-blue);
+$accent : md-palette($md-amber, A200, A100, A400);
+$theme: md-light-theme($primary, $accent);
+@include angular-material-theme($theme);
+.m2app-dark {
+  $dark-primary: md-palette($md-pink, 700, 500, 900);
+  $dark-accent: md-palette($md-blue-grey, A200, A100, A400);
+  $dark-warn: md-palette($md-deep-orange);
+  $dark-theme: md-dark-theme($dark-primary, $dark-accent, $dark-warn);
+  @include angular-material-theme($dark-theme);
+}
+
+* {
+  margin: 0px;
+  padding: 0px
+}
+
+$white: #ffffff;
+.loginmodal-container {
+  .google {
+    background-color: #dd4b39 !important;
+    color: $white !important;
+  }
+  .github {
+    background-color: #333333 !important;
+    color: $white !important;
+  }
+  .facebook {
+    background-color: #006699 !important;
+    color: $white !important;
+  }
+  .fa {
+    font-size: 20px;
+    color: $white;
+    margin-right: 5px;
+  }
+  button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.homemodal-container{
+  img{
+    width: 150px;
+  }
+}
+
+footer {
+  bottom: 0 !important;
+  position: fixed;
+  width: 100%;
+}
+
+.app-toolbar-filler {
+  flex: 1 1 auto;
+}
+
+.spacer {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.app-content {
+  padding: 20px;
+}
+
+.app-content md-card {
+  margin: 20px;
+}
