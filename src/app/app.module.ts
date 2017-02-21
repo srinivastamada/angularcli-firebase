@@ -6,10 +6,10 @@ import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 import { AppComponent } from './app.component';
 import { AngularFireModule } from 'angularfire2';
-import {AF} from "./providers/af";
+import { AF } from "./providers/af";
 import { LoginPageComponent } from './login-page/login-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
-
+import { AdsenseModule } from 'ng2-adsense';
 export const firebaseConfig = {
   apiKey: 'AIzaSyCLcZnN_pTLwdJ-t6hcYAntEMjtMMicDfw',
   authDomain: "angularfirebase-884d4.firebaseapp.com",
@@ -27,7 +27,8 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     LoginPageComponent,
-    HomePageComponent
+    HomePageComponent,
+    AppComponent
   ],
   providers: [AF],
   imports: [
@@ -36,7 +37,11 @@ const routes: Routes = [
     HttpModule,
     AngularFireModule.initializeApp(firebaseConfig),
     RouterModule.forRoot(routes),
-    MaterialModule.forRoot()
+    MaterialModule.forRoot(),
+     AdsenseModule.forRoot({
+      adClient: 'ca-pub-6904774409601870',
+      adSlot: 4242245788
+    }),
   ],
   bootstrap: [AppComponent]
 })
