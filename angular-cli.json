@@ -19,7 +19,7 @@
       "prefix": "app",
       "styles": [
         "styles.css",
-        "./assets/scss/styles.scss"
+        "./scss/styles.scss"
       ],
       "scripts": [],
       "environments": {
