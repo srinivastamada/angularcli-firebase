@@ -10,12 +10,13 @@ import { AF } from "./providers/af";
 import { LoginPageComponent } from './login-page/login-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { AdsenseModule } from 'ng2-adsense';
+
 export const firebaseConfig = {
-  apiKey: 'AIzaSyCLcZnN_pTLwdJ-t6hcYAntEMjtMMicDfw',
-  authDomain: "angularfirebase-884d4.firebaseapp.com",
-  databaseURL: "https://angularfirebase-884d4.firebaseio.com",
-  storageBucket: "angularfirebase-884d4.appspot.com",
-  messagingSenderId: "10799074907"
+  apiKey: 'api key',
+  authDomain: "authDomain",
+  databaseURL: "databaseURL",
+  storageBucket: "storageBucket",
+  messagingSenderId: "messagingSenderId"
 };
 
 const routes: Routes = [
