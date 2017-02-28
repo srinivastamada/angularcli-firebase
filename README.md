@@ -2,10 +2,24 @@
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
 
+## Tutorial Link
+
+http://www.9lessons.info/2017/02/create-angular2-firebase-social-autentication.html
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+## Modify app.module.ts
+
+```
+export const firebaseConfig = {
+  apiKey: "XXXXXXXXXXXXXXXXXXX",
+  authDomain: "XXXXXXXXXXXXXXXXXXX.firebaseapp.com",
+  databaseURL: "https://XXXXXXXXXXXXXXX.firebaseio.com",
+  storageBucket: "XXXXXXXXXXXXXXX.appspot.com",
+  messagingSenderId: "XXXXXXXXXXXXXXX"
+};
+```
 
 ## Build Production
 
