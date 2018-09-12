@@ -21,7 +21,7 @@
     "@angular/platform-browser": "^2.3.1",
     "@angular/platform-browser-dynamic": "^2.3.1",
     "@angular/router": "^3.3.1",
-    "angularfire2": "^2.0.0-beta.8",
+    "angularfire2": "^5.0.0",
     "core-js": "^2.4.1",
     "firebase": "^3.6.9",
     "ng2-adsense": "^2.0.2",
